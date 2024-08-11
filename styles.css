@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: #61dafb;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+#quote {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+#input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #61dafb;
+    border-radius: 8px;
+    outline: none;
+    background-color: #1e1e1e;
+    color: #61dafb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#input::placeholder {
+    color: #888;
+    opacity: 0.8;
+}
+
+#input:focus {
+    border-color: #4fa3c2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#input:hover {
+    border-color: #4fa3c2;
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#timer {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #4fa3c2;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#toggleParticlesButton {
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#toggleParticlesButton:hover {
+    background-color: #4fa3c2;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#toggleParticlesButton:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.correct {
+    color: #4caf50;
+    transition: all 0.3s ease;
+}
+
+.incorrect {
+    color: #f44336;
+    transition: all 0.3s ease;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#timer, #quote, #input, #results, #restartButton {
+    position: relative;
+    z-index: 1;
+}
+
+#quote {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#results {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}

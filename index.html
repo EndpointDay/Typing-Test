@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div id="timer">30s</div>    
+        <div id="quote" class="quote-box"></div>
+        <input type="text" id="input" placeholder="Start typing..." autofocus>
+        
+        <div id="results">   
+            <span id="wpm">WPM: 0</span>
+            <span id="accuracy">Accuracy: 100%</span>
+        </div>
+
+        <button id="restartButton">Restart</button>        
+        <button id="toggleParticlesButton">Toggle Particles</button>
+        <div id="particles"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
